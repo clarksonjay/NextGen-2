@@ -1,0 +1,269 @@
+/* ---------------------------------------------------------
+General
+------------------------------------------------------------
+ */
+ /* Fonts */
+ :root {
+  --font-default: "Open Sans", system-ui, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-secondary: "Inter", sans-serif;
+}
+/* Colors */
+ :root {
+  --color-default: #fcf8f8;
+  --color-primary: #1c2ae5;
+  --color-secondary: #0e1626;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+  
+
+ body{
+  font-family: var(--font-default);
+  background: url(./Images/bg-img.jpg);
+  background-size: cover;
+  
+ }
+
+ a{
+  color: var(--color-default);
+  text-decoration: none;
+ }
+
+ a:hover{
+  color: #fff;
+ }
+
+h1,
+h2,
+h3,
+h4{
+  font-family: var(--font-primary);
+}
+
+/* -----------------------------------------------------------
+Header
+-------------------------------------------------
+ */
+ .header{
+  z-index: 997;
+  padding: 20px 0;
+  background: rgba(221, 92, 247, 0.5);
+ }
+
+ .header .logo h1{
+  font-size: 30px;
+  width: 60px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--color-default);
+  font-family: var(--font-secondary);
+ }
+
+ .header a{
+  text-decoration: none;
+
+ }
+
+ .header .logo img{
+  max-height: 40px;
+  margin-right: 10px;
+ }
+
+  .navBar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .navBar li{
+    position: relative;
+  }
+
+  .navBar a,
+  .navBar a:focus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+
+  .navBar a:hover,
+  .navBar a:active,
+  .navBar .active:focus,
+  .navBar li:hover>a{
+    color: #beb6b6;
+    text-decoration: underline;
+  }
+
+  /* ------------------------------------------------------
+  Hero Section
+  -------------------------------------------------------- */
+  .hero{
+    background: transparent;
+    color: #fff;
+  }
+
+  .hero h1{
+    font-size: 80px;
+    font-weight: 500;
+    font-family: var(--font-secondary);
+    padding: 20px 0 20px 0;
+  }
+
+  .wait{
+    background: #800080;
+    padding: 10px 20px 10px 20px;
+    margin-right: 10px;
+    border-radius: 25px;     
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    transition: .3s ease-in-out;
+  }
+
+  .wait:hover{
+    background-color: #5959c5;
+  }
+
+  .share{
+   color: #fff;
+   background: #0000ff;
+   padding: 10px 20px 10px 20px;
+   border-radius: 25px;
+   text-decoration: none;
+   font-family: var(--font-secondary);
+   transition: .3s ease-in-out;
+  }
+
+  .share:hover{
+    background-color: #ac3cac;
+  }
+  /* Sections */
+section{
+  margin-top: 130px;
+}
+
+/* =========================================================
+About
+========================================================== */
+#about{
+  margin-top: 170px;
+}
+.about,
+.section-header h2{
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.section-header h2{
+  width: 100%;
+  border-bottom: 1px solid rgba(221, 92, 247, 0.5);
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.about p{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* ---------------------------------------------------------
+Contact Section
+------------------------------------------------------------ */
+.contact .info-item+ .info-item{
+  margin-top: 40px;
+}
+
+.contact .info-item i{
+  font-size: 20px;
+  background: #800080;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.contact .info-item h4{
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.contact .info-item p{
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: rgba(198, 207, 219, 0.8);
+}
+
+.contact .php-email-form{
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group{
+  padding: 8px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea{
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input{
+  height: 44px;
+}
+
+.contact .php-email-form textarea{
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit]{
+  background: #800080;
+  border: none;
+  padding: 10px 35px;
+  color: #fff;
+  transition: all ease-in-out 0.4s;
+  border-radius: 5px;
+}
+
+.contact .php-email-form button[type=submit]:hover{
+  background: rgba(103, 7, 122, 0.521);
+}
+
+
+.contact p{
+  color: #fff;
+  font-family: var(--font-secondary);
+  font-size: 17px;
+}
+
+.contact h2{
+  font-size: 36px;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+  color: #fff;
+}
